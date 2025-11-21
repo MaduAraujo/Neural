@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Site interativo sobre o futuro da Inteligência Artificial. Criado para o Desafio Alura.">
+    <meta property="og:title" content="Neural | O Futuro da IA">
+    <meta property="og:description" content="Descubra como as máquinas aprendem neste site imersivo.">
+    <meta property="og:image" content="link-para-um-print-do-seu-site.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Neural | O Futuro da IA</title>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="logo">NEURAL<span class="dot">_</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#conceito">Conceito</a></li>
+            <li><a href="#showcase">Aplicações</a></li>
+            <li><a href="#etica">Ética</a></li>
+
+            <li id="games-dropdown-container" class="dropdown-wrapper">
+                <a href="#" class="nav-link dropbtn" id="games-dropdown-btn">
+                    Jogos <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                </a>
+                <div class="dropdown-content" id="games-dropdown-content">
+                    <a href="#quiz">Desafio Neural</a>
+                    <a href="#mini-game">Pedra, Papel, Tesoura</a>
+                    <a href="#demo-ia">Teste de IA ao Vivo</a>
+                </div>
+            </li>
+            </ul>
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>INTELIGÊNCIA <br> <span class="text-gradient">ARTIFICIAL</span></h1>
+            <p class="typewriter-text"></p> 
+            <a href="#conceito" class="btn-main hidden">Explorar <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section id="conceito" class="section-padding">
+        <div class="container hidden">
+            <h2 class="section-title">O Cérebro Digital</h2>
+            <p class="section-subtitle">Como redes neurais simulam o aprendizado humano?</p>
+            
+            <div class="concept-grid">
+                <div class="info-box">
+                    <i class="fas fa-network-wired icon-neon"></i>
+                    <h3>Redes Neurais</h3>
+                    <p>Camadas de "neurônios" matemáticos que processam dados e encontram padrões complexos invisíveis ao olho humano.</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-database icon-neon"></i>
+                    <h3>Big Data</h3>
+                    <p>O combustível da IA. Bilhões de parâmetros são analisados para treinar modelos como o GPT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tipos" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">Níveis de Evolução</h2>
+            <p class="section-subtitle">A jornada da IA: de assistentes simples à superinteligência.</p>
+            
+            <div class="types-container">
+                <div class="type-card active-tech">
+                    <div class="status-light"></div>
+                    <h3>ANI</h3>
+                    <span class="badge-tech">Atualidade</span>
+                    <p><strong>Artificial Narrow Intelligence.</strong> IAs especialistas em uma única tarefa (Xadrez, Chatbots, Reconhecimento Facial). É o que temos hoje.</p>
+                </div>
+
+                <div class="type-card locked-tech">
+                    <div class="status-light"></div>
+                    <h3>AGI</h3>
+                    <span class="badge-tech">Futuro Próximo</span>
+                    <p><strong>Artificial General Intelligence.</strong> O nível humano. Uma IA capaz de aprender e resolver qualquer problema intelectual que um humano consegue.</p>
+                </div>
+
+                <div class="type-card locked-tech">
+                    <div class="status-light"></div>
+                    <h3>ASI</h3>
+                    <span class="badge-tech">Teórico</span>
+                    <p><strong>Artificial Super Intelligence.</strong> Supera a inteligência humana em todos os aspectos. O ponto da "Singularidade Tecnológica".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="section-padding">
+        <div class="container">
+            <h2 class="section-title hidden">A Era Generativa</h2>
+            <p class="section-subtitle hidden">Como a IA está criando conteúdo e automatizando tarefas complexas.</p>
+            <div class="cards-container">
+                
+                <div class="glass-card hidden">
+                    <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
+                    <h3>NLP & Chatbots</h3>
+                    <p>Modelos de linguagem (LLMs) capazes de escrever código, poesia e manter conversas naturais.</p>
+                </div>
+
+                <div class="glass-card hidden">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Visão Computacional</h3>
+                    <p>Criação de imagens realistas e arte digital a partir de simples descrições textuais (prompts).</p>
+                </div>
+
+                <div class="glass-card hidden">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automação</h3>
+                    <p>Agentes autônomos que otimizam fluxos de trabalho e tomam decisões em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="linguagens" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">O Código Fonte</h2>
+            <p class="section-subtitle">As linguagens que constroem as mentes digitais.</p>
+
+            <div class="lang-grid">
+                <div class="lang-item">
+                    <i class="fab fa-python lang-icon"></i>
+                    <div class="lang-info">
+                        <h3>Python</h3>
+                        <p>A líder absoluta. Simples e poderosa, é a base de bibliotecas como <strong>PyTorch</strong> e <strong>TensorFlow</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="lang-item">
+                    <i class="fas fa-code lang-icon"></i> 
+                    <div class="lang-info">
+                        <h3>C++</h3>
+                        <p>Performance pura. Usada quando a IA precisa rodar em tempo real (jogos, robótica) e para criar as próprias bibliotecas do Python.</p>
+                    </div>
+                </div>
+
+                <div class="lang-item">
+                    <i class="fas fa-chart-bar lang-icon"></i>
+                    <div class="lang-info">
+                        <h3>R</h3>
+                        <p>A favorita dos estatísticos. Essencial para análise de dados pesada e visualização gráfica complexa.</p>
+                    </div>
+                </div>
+
+                <div class="lang-item">
+                    <i class="fab fa-js lang-icon"></i>
+                    <div class="lang-info">
+                        <h3>JavaScript</h3>
+                        <p>IA no navegador. Com <strong>TensorFlow.js</strong>, trazemos aprendizado de máquina direto para o Front-end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="etica" class="section-padding">
+        <div class="container hidden">
+            <div class="ethics-box">
+                <h2><i class="fas fa-balance-scale"></i> O Dilema Ético</h2>
+                <p>Com grande poder vem grande responsabilidade. Precisamos discutir viés algorítmico, direitos autorais e o impacto no mercado de trabalho.</p>
+                <ul class="ethics-list">
+                    <li><i class="fas fa-check"></i> Transparência</li>
+                    <li><i class="fas fa-check"></i> Privacidade</li>
+                    <li><i class="fas fa-check"></i> Inclusão</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section-padding"> 
+        <div class="container hidden">
+            <h2 class="section-title">Desafio Neural</h2>
+            <p class="section-subtitle">Você realmente entendeu? Teste seu conhecimento.</p>
+            
+            <div class="quiz-container glass-card">
+                <div id="quiz-question" class="question-text">Carregando pergunta...</div>
+                <div id="quiz-options" class="options-grid">
+                </div>
+                <p id="quiz-feedback" class="feedback-text"></p>
+                <button id="next-btn" class="btn-main" style="display: none;">Próxima</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mini-game" class="section-padding">
+    <div class="container hidden quiz-container">
+        <h2 class="section-title">Pedra, Papel, Tesoura</h2>
+        <p class="section-subtitle">Tente vencer a IA... se puder! Ela aprende com você.</p>
+
+        <div class="game-area" style="margin-top: 40px;">
+            <div class="choices" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+                <button class="btn-main game-choice-btn" data-choice="rock"><i class="fas fa-hand-rock"></i> Pedra</button>
+                <button class="btn-main game-choice-btn" data-choice="paper"><i class="fas fa-hand-paper"></i> Papel</button>
+                <button class="btn-main game-choice-btn" data-choice="scissors"><i class="fas fa-hand-scissors"></i> Tesoura</button>
+            </div>
+
+            <div class="results-display" style="font-size: 1.2rem; margin-bottom: 20px;">
+                <p>Você escolheu: <span id="player-choice-display">?</span></p>
+                <p>IA escolheu: <span id="ia-choice-display">?</span></p>
+            </div>
+
+            <h3 id="game-result" class="text-gradient" style="font-size: 2rem; margin-bottom: 20px; min-height: 2.5em;">Faça sua jogada!</h3>
+            
+            <div class="score-display" style="font-size: 1.1rem; color: #bbb;">
+                <p>Placar: Você <span id="player-score">0</span> - <span id="ia-score">0</span> IA</p>
+                <p>Rodadas: <span id="rounds-played">0</span></p>
+            </div>
+
+            <button id="reset-game-btn" class="btn-main" style="margin-top: 30px; background: #555; border-color: #555; display: none;">Reiniciar Jogo</button>
+        </div>
+    </div>
+    </section>
+
+    <section id="demo-ia" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">Teste de IA ao Vivo</h2>
+            <p class="section-subtitle">Permita o acesso à câmera para testar o modelo.</p>
+            
+            <div style="text-align: center;">
+                <button id="start-btn" type="button" class="btn-main" onclick="init()">Iniciar Câmera</button>
+                <button id="stop-btn" type="button" class="btn-main" onclick="stop()">Parar Câmera</button>
+                <div id="webcam-container" style="margin-top: 30px;"></div>
+                <div id="label-container" style="margin-top: 20px; font-family: monospace;"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/MaduAraujo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mariaeduarda2801/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

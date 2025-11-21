@@ -5,6 +5,10 @@
 O **Neural** é um site web desenvolvido para educar e engajar usuários sobre o tema da Inteligência Artificial, utilizando um design futurista e elementos interativos. 
 O principal objetivo é desmistificar conceitos complexos (como Redes Neurais, ANI, AGI e ASI) e apresentar as tecnologias de IA generativa de forma acessível e visualmente atraente.
 
+## Demonstração
+
+https://github.com/user-attachments/assets/7e51d9f7-3da1-44d1-bb0e-429915d90061
+
 ## Funcionalidades Principais
 
 O site está dividido em seções principais, cada uma focada em um aspecto da IA:

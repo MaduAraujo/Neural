@@ -30,9 +30,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#conceito">Conceito</a></li>
-            <li><a href="#showcase">Aplicações</a></li>
-            <li><a href="#etica">Ética</a></li>
-
+            <li><a href="#historia">História</a></li> 
             <li id="games-dropdown-container" class="dropdown-wrapper">
                 <a href="#" class="nav-link dropbtn" id="games-dropdown-btn">
                     Jogos <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
@@ -40,10 +38,10 @@
                 <div class="dropdown-content" id="games-dropdown-content">
                     <a href="#quiz">Desafio Neural</a>
                     <a href="#mini-game">Pedra, Papel, Tesoura</a>
-                    <a href="#demo-ia">Teste de IA ao Vivo</a>
+                    <a href="#demo-ia">Teste de IA</a>
                 </div>
             </li>
-            </ul>
+        </ul>
         <button id="theme-toggle" class="theme-btn">
             <i class="fas fa-moon"></i>
         </button>
@@ -67,21 +65,71 @@
                 <div class="info-box">
                     <i class="fas fa-network-wired icon-neon"></i>
                     <h3>Redes Neurais</h3>
+                    <br>
                     <p>Camadas de "neurônios" matemáticos que processam dados e encontram padrões complexos invisíveis ao olho humano.</p>
                 </div>
                 <div class="info-box">
                     <i class="fas fa-database icon-neon"></i>
                     <h3>Big Data</h3>
+                    <br>
                     <p>O combustível da IA. Bilhões de parâmetros são analisados para treinar modelos como o GPT.</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-microchip icon-neon"></i>
+                    <h3>Machine Learning</h3>
+                    <br>
+                    <p>A capacidade de melhorar o desempenho com a experiência, sem ser explicitamente programado para cada regra.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="tipos" class="section-padding bg-darker">
+    <section id="historia" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">Linha do Tempo</h2>
+            <p class="section-subtitle">Os marcos que nos trouxeram até aqui.</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">1950</div>
+                    <div class="timeline-content glass-card">
+                        <h3>O Teste de Turing</h3>
+                        <br>
+                        <p>Alan Turing propõe a questão: "Máquinas podem pensar?", criando o teste fundamental da IA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1997</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Deep Blue vs Kasparov</h3>
+                        <br>
+                        <p>Pela primeira vez, um computador vence o campeão mundial de xadrez.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Alpha Go</h3>
+                        <br>
+                        <p>A IA da Google vence no Go, um jogo considerado complexo demais para máquinas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Era Generativa</h3>
+                        <br>
+                        <p>Lançamento do ChatGPT e MidJourney. A IA passa a criar conteúdo original.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tipos" class="section-padding">
         <div class="container hidden">
             <h2 class="section-title">Níveis de Evolução</h2>
-            <p class="section-subtitle">A jornada da IA: de assistentes simples à superinteligência.</p>
+            <p class="section-subtitle">A jornada da IA: de assistentes simples à super inteligência.</p>
             
             <div class="types-container">
                 <div class="type-card active-tech">
@@ -108,27 +156,55 @@
         </div>
     </section>
 
+    <section id="tecnologias" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">O Coração da Máquina</h2>
+            <p class="section-subtitle">O hardware e os algoritmos que dão vida à Inteligência Artificial.</p>
+            
+            <div class="cards-container">
+                <div class="glass-card tech-card">
+                    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Hardware (GPUs)</h3>
+                    <br>
+                    <p>As GPUs (Graphics Processing Units) são o motor da IA moderna. Sua arquitetura paralela é perfeita para o cálculo maciço de tensores em redes neurais profundas.</p>
+                </div>
+                <div class="glass-card tech-card">
+                    <div class="card-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Algoritmos de Otimização</h3>
+                    <br>
+                    <p>Técnicas como Descida de Gradiente (Gradient Descent) ajustam os "pesos" da rede neural para minimizar o erro (função de custo) e melhorar a precisão.</p>
+                </div>
+                <div class="glass-card tech-card">
+                    <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Transfer Learning</h3>
+                    <br>
+                    <p>Reaproveitamento de modelos gigantes (como BERT ou VGG) já treinados em dados massivos, adaptando-os rapidamente para tarefas menores com pouco custo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="showcase" class="section-padding">
         <div class="container">
             <h2 class="section-title hidden">A Era Generativa</h2>
             <p class="section-subtitle hidden">Como a IA está criando conteúdo e automatizando tarefas complexas.</p>
             <div class="cards-container">
-                
                 <div class="glass-card hidden">
                     <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
                     <h3>NLP & Chatbots</h3>
+                    <br>
                     <p>Modelos de linguagem (LLMs) capazes de escrever código, poesia e manter conversas naturais.</p>
                 </div>
-
                 <div class="glass-card hidden">
                     <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
                     <h3>Visão Computacional</h3>
+                    <br>
                     <p>Criação de imagens realistas e arte digital a partir de simples descrições textuais (prompts).</p>
                 </div>
-
                 <div class="glass-card hidden">
                     <div class="card-icon"><i class="fas fa-robot"></i></div>
                     <h3>Automação</h3>
+                    <br>
                     <p>Agentes autônomos que otimizam fluxos de trabalho e tomam decisões em tempo real.</p>
                 </div>
             </div>
@@ -139,36 +215,36 @@
         <div class="container hidden">
             <h2 class="section-title">O Código Fonte</h2>
             <p class="section-subtitle">As linguagens que constroem as mentes digitais.</p>
-
             <div class="lang-grid">
                 <div class="lang-item">
                     <i class="fab fa-python lang-icon"></i>
                     <div class="lang-info">
                         <h3>Python</h3>
+                        <br>
                         <p>A líder absoluta. Simples e poderosa, é a base de bibliotecas como <strong>PyTorch</strong> e <strong>TensorFlow</strong>.</p>
                     </div>
                 </div>
-
                 <div class="lang-item">
                     <i class="fas fa-code lang-icon"></i> 
                     <div class="lang-info">
                         <h3>C++</h3>
+                        <br>
                         <p>Performance pura. Usada quando a IA precisa rodar em tempo real (jogos, robótica) e para criar as próprias bibliotecas do Python.</p>
                     </div>
                 </div>
-
                 <div class="lang-item">
                     <i class="fas fa-chart-bar lang-icon"></i>
                     <div class="lang-info">
                         <h3>R</h3>
+                        <br>
                         <p>A favorita dos estatísticos. Essencial para análise de dados pesada e visualização gráfica complexa.</p>
                     </div>
                 </div>
-
                 <div class="lang-item">
                     <i class="fab fa-js lang-icon"></i>
                     <div class="lang-info">
                         <h3>JavaScript</h3>
+                        <br>
                         <p>IA no navegador. Com <strong>TensorFlow.js</strong>, trazemos aprendizado de máquina direto para o Front-end.</p>
                     </div>
                 </div>
@@ -180,12 +256,57 @@
         <div class="container hidden">
             <div class="ethics-box">
                 <h2><i class="fas fa-balance-scale"></i> O Dilema Ético</h2>
+                <br>
                 <p>Com grande poder vem grande responsabilidade. Precisamos discutir viés algorítmico, direitos autorais e o impacto no mercado de trabalho.</p>
                 <ul class="ethics-list">
-                    <li><i class="fas fa-check"></i> Transparência</li>
-                    <li><i class="fas fa-check"></i> Privacidade</li>
-                    <li><i class="fas fa-check"></i> Inclusão</li>
+                    <li><i class="fas fa-check"></i> Transparência Algorítmica</li>
+                    <li><i class="fas fa-check"></i> Privacidade de Dados</li>
+                    <li><i class="fas fa-check"></i> Inclusão e Diversidade</li>
                 </ul>
+            </div>
+            
+            <div class="myths-container" style="margin-top: 50px;">
+                <h3 class="section-title">Mitos vs. Verdades</h3>
+                <div class="cards-container">
+                    <div class="glass-card myth-card">
+                        <h4 style="color: #ff4d4d;">A IA tem sentimentos</h4>
+                        <p style="margin-top: 10px;"><strong>Mito:</strong> A Inteligência Artificial não tem sentimentos ou consciência da mesma forma que os seres humanos. O que ela faz é simular emoções e reconhecer padrões de linguagem e comportamento com base em dados para interagir de forma mais natural e empática.</p>
+                    </div>
+                    <div class="glass-card myth-card">
+                        <h4 style="color: #00ff94;">Aplicações de IA podem ser preconceituosas</h4>
+                        <p style="margin-top: 10px;"><strong>Verdade:</strong> As aplicações de IA são criadas com base em dados gerados pelos seres humanos, desta forma, existem vieses e preconceitos que são refletidos no resultado da IA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="section-padding bg-darker">
+        <div class="container hidden">
+            <h2 class="section-title">Próximo Nível</h2>
+            <p class="section-subtitle">Onde começar a construir sua própria mente digital.</p>
+            
+            <div class="cards-container">
+                <div class="glass-card resource-card">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Cursos e Bootcamps</h3>
+                    <br>
+                    <p>Plataformas como Alura, Coursera oferecem trilhas completas, focadas em Python, Machine Learning e Deep Learning.</p>
+                </div>
+
+                <div class="glass-card resource-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Comunidade e Desafios</h3>
+                    <br>
+                    <p>Participe do Kaggle para competir em data science, pratique no GitHub e junte-se a comunidades de IA para networking e suporte.</p>
+                </div>
+
+                <div class="glass-card resource-card">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Ferramentas Essenciais</h3>
+                    <br>
+                    <p>Comece a codificar usando Jupyter Notebooks, e mergulhe nas bibliotecas principais: TensorFlow, PyTorch e Scikit-learn.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -205,13 +326,13 @@
         </div>
     </section>
 
-    <section id="mini-game" class="section-padding">
+    <section id="mini-game" class="section-padding bg-darker">
     <div class="container hidden quiz-container">
         <h2 class="section-title">Pedra, Papel, Tesoura</h2>
         <p class="section-subtitle">Tente vencer a IA... se puder! Ela aprende com você.</p>
 
         <div class="game-area" style="margin-top: 40px;">
-            <div class="choices" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+            <div class="choices" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
                 <button class="btn-main game-choice-btn" data-choice="rock"><i class="fas fa-hand-rock"></i> Pedra</button>
                 <button class="btn-main game-choice-btn" data-choice="paper"><i class="fas fa-hand-paper"></i> Papel</button>
                 <button class="btn-main game-choice-btn" data-choice="scissors"><i class="fas fa-hand-scissors"></i> Tesoura</button>
@@ -234,7 +355,7 @@
     </div>
     </section>
 
-    <section id="demo-ia" class="section-padding bg-darker">
+    <section id="demo-ia" class="section-padding">
         <div class="container hidden">
             <h2 class="section-title">Teste de IA ao Vivo</h2>
             <p class="section-subtitle">Permita o acesso à câmera para testar o modelo.</p>
@@ -242,15 +363,37 @@
             <div style="text-align: center;">
                 <button id="start-btn" type="button" class="btn-main" onclick="init()">Iniciar Câmera</button>
                 <button id="stop-btn" type="button" class="btn-main" onclick="stop()">Parar Câmera</button>
-                <div id="webcam-container" style="margin-top: 30px;"></div>
-                <div id="label-container" style="margin-top: 20px; font-family: monospace;"></div>
+                <div id="webcam-container" style="margin-top: 30px; border-radius: 15px; overflow: hidden; display: inline-block; box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);"></div>
+                <div id="label-container" style="margin-top: 20px; font-family: monospace; font-size: 1.2rem;"></div>
             </div>
         </div>
     </section>
+
     <footer>
-        <div class="socials">
-            <a href="https://github.com/MaduAraujo" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mariaeduarda2801/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NEURAL_</h3>
+                <p>Explorando as fronteiras da inteligência artificial.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Conexão</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mariaeduarda2801/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/MaduAraujo" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/tech_sciencecomputer/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Receba as novidades do futuro.</p>
+                <form action="#" style="display: flex; gap: 10px; margin-top: 10px;">
+                    <input type="email" placeholder="seu@email.com" style="padding: 8px; border-radius: 5px; border: none; width: 100%;">
+                    <button type="submit" class="btn-main" style="padding: 8px 15px;">Ok</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Neural.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
